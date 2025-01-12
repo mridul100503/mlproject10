@@ -43,4 +43,5 @@ class DataIngestion:
 
             )
         except Exception as e:
+            logging.error(f"Error in data ingestion: {e}")
             raise CustomException(e,sys)
